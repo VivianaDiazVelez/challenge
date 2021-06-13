@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 namespace Spider.unit.tests
 {
     [TestClass]
-    public class SpiderUnitTest
+    public class SpiderUnitTest 
     {
 
         [TestMethod]
@@ -64,5 +64,6 @@ namespace Spider.unit.tests
 
             Assert.AreEqual(0, totalSecuencies);
         }
+
     }
 }
