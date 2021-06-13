@@ -2,16 +2,17 @@
 
 namespace Magneto.Migrations
 {
-    public partial class addUniquDNAtoDb : Migration
+    public partial class addUniqueDNAtoDb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterColumn<string>(
                 name: "DNA",
                 table: "Mutants",
-                type: "nvarchar(max)",
+                type: "nvarchar(450)",
                 nullable: true,
                 oldClrType: typeof(string),
+                oldType: "nvarchar(max)",
                 oldNullable: true);
 
             migrationBuilder.CreateIndex(
@@ -34,6 +35,7 @@ namespace Magneto.Migrations
                 type: "nvarchar(max)",
                 nullable: true,
                 oldClrType: typeof(string),
+                oldType: "nvarchar(450)",
                 oldNullable: true);
         }
     }

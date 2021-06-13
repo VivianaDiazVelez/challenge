@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Magneto.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20210612214635_addUniquDNAtoDb")]
-    partial class addUniquDNAtoDb
+    [Migration("20210613022730_addUniqueDNAtoDb")]
+    partial class addUniqueDNAtoDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

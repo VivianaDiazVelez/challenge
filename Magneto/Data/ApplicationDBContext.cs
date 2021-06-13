@@ -7,7 +7,6 @@ namespace Magneto.Data
     {
         public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options):base(options)
         {
-
         }
 
         public DbSet<Mutant> Mutants { get; set; }
