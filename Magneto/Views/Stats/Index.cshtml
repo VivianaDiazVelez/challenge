@@ -1,0 +1,34 @@
+﻿@model Magneto.Models.Stats
+
+<div class="border p-3">
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="TotalMutants" ></label>
+            </div>
+            <div class="form-group col-md-6">
+                <input type="text" readonly class="form-control-plaintext" asp-for="TotalMutants" />
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="TotalHumans"></label>
+            </div>
+            <div class="form-group col-md-6">
+                <input type="text" readonly class="form-control-plaintext" asp-for="TotalHumans" />
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="Ratio"></label>
+            </div>
+            <div class="form-group col-md-6">
+                <input type="text" readonly class="form-control-plaintext" asp-for="Ratio" />
+            </div>
+        </div>
+    </form>
+    <div class="row">
+        <div class="col-8 offset-1 row">
+            <div class="col">
+                <a asp-controller="Mutant" asp-action="Index" class="btn btn-danger w-75">Back</a>
+            </div>
+        </div>
+    </div>
+ </div>
+
