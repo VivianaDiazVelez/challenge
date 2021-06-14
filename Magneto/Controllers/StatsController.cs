@@ -27,7 +27,7 @@ namespace Magneto.Controllers
             stats.TotalHumans = countHumans;
             if (countHumans != 0)
             {
-                stats.Ratio = countMutants / countHumans;
+                stats.Ratio = countMutants*1d / countHumans*1d;
             };
 
             return View(stats);
