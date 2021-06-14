@@ -14,7 +14,7 @@ namespace Magneto.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<Mutant>()
-                .HasIndex(m => m.DNA)
+                .HasIndex(m => m.DNAHash)
                 .IsUnique();
         }
     }

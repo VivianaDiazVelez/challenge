@@ -10,10 +10,13 @@ namespace Magneto.Controllers
     public class MutantController : Controller
     {
         private readonly ApplicationDBContext _db;
+        private readonly HashData _hashData;
+
 
         public MutantController(ApplicationDBContext db)
         {
             _db = db;
+            _hashData = new HashData();
         }
         public IActionResult Index()
         {
@@ -36,6 +39,7 @@ namespace Magneto.Controllers
 
             var task = Scanner.IsMutant(dna);
             mutant.IsMutant = task.Result;
+            mutant.DNAHash=_hashData.CreateHash(mutant.DNA);
 
             _db.Mutants.Add(mutant);
             _db.SaveChanges();

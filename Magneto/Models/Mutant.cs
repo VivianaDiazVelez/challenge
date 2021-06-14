@@ -9,6 +9,8 @@ namespace Magneto.Models
         public int Id { get; set; }
         [DisplayName("Input DNA string:")]
         public string DNA { get; set; }
+        public string DNAHash { get; set; }
         public bool IsMutant { get; set; }
+
     }
 }
